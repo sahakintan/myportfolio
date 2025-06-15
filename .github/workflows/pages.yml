@@ -9,32 +9,37 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  github-pages:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # or match your Gemfile
+          ruby-version: '3.1'
 
       - name: Install Dependencies
         run: |
           gem install bundler
           bundle install
 
-      - name: Build Site with Jekyll
+      - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl /myportfolio
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: _site
 
   deploy:
-    needs: github-pages
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -42,4 +47,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2

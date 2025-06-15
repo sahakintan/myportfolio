@@ -1,0 +1,10 @@
+github_users:
+  - sahakintan
+
+
+repo_description_lines_max: 2
+
+github_repos:
+  - sahakintan/many_body_correlation
+  - sahakintan/Ranking_preferences
+

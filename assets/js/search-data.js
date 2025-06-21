@@ -51,13 +51,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/myportfolio/repositories/";
           },
-        },{id: "nav-music",
-          title: "music",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/myportfolio/music/";
-          },
         },{id: "post-presentation-on-structure-from-motion",
         
           title: "Presentation on Structure From Motion",

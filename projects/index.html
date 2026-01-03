@@ -4,9 +4,6 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-      
-      <meta http-equiv="refresh" content="3; url=/myportfolio/">
-    
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -26,7 +23,7 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
   
   
     
-      Page not found | Kintan Saha
+      projects | Kintan Saha
     
   
 </title>
@@ -75,7 +72,7 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/myportfolio/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="https://sahakintan.github.io/myportfolio/404.html">
+<link rel="canonical" href="https://sahakintan.github.io/myportfolio/projects/">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
@@ -209,6 +206,8 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
             
           
             
+          
+            
               
                 
                 <li class="nav-item ">
@@ -217,8 +216,6 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
                   </a>
                 </li>
               
-            
-          
             
           
             
@@ -233,10 +230,14 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
             
           
             
+          
+            
               
                 
-                <li class="nav-item ">
+                <li class="nav-item active">
                   <a class="nav-link" href="/myportfolio/projects/">projects
+                    
+                      <span class="sr-only">(current)</span>
                     
                   </a>
                 </li>
@@ -263,8 +264,6 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
             
           
             
-          
-            
               
                 
                 <li class="nav-item ">
@@ -273,6 +272,8 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
                   </a>
                 </li>
               
+            
+          
             
           
             
@@ -312,12 +313,96 @@ Kintan Saha | Reinforcement Learning &amp; Computer Vision Research
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">projects</h1>
+    <p class="post-description"></p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="https://sahakintan.github.io/myportfolio">home page</a>.</p>
+    <div class="projectcontainer">
+  <div class="tab-content active">
+    <h3>Reliable Critics: Monotonic Improvement and Convergence Guarantees for Reinforcement Learning</h3>
+    <p>
+      <em>May 2025 – Present | Advisor:  <a href="https://sites.google.com/site/gugancth/" rel="external nofollow noopener" target="_blank">Prof Gugan Thoppe</a> and <a href="https://ece.iisc.ac.in/~aditya/" rel="external nofollow noopener" target="_blank">Prof. Aditya Gopalan</a></em>
+    </p>
+    <p> This project builds upon Reliable Critics, a reinforcement learning framework that ensures stable, monotonic policy improvement by addressing the unreliability of critic estimates in actor-critic methods. By using lower confidence bounds and restricting policy updates to regions where the critic is accurate, the method guarantees safe and theoretically sound improvements, similar to Conservative Policy Iteration. Compatible with deep function approximation, Reliable Critics outperforms PPO and SAC on continuous control tasks, especially under high noise and approximation errors. <br><br> Building on this foundation, this project aims to extend the Reliable Policy Iteration (RPI) framework across multiple state-of-the-art (SOTA) algorithms such as PPO, TD3, and DDPG, and benchmark them on diverse environments including Atari, MuJoCo, and MiniGrid. A novel plug-and-play RPI-based loss function was designed to integrate with existing Deep RL algorithms. Extensive experiments were conducted on the sparse-reward MiniGrid environment, along with ablation studies, to establish new baselines and advance the state-of-the-art in reliable deep reinforcement learning. </p>
+    <div class="tags">
+      <span>Deep Reinforcement Learning</span>
+      <span>Theoretical guarantees in Reinforcement Learning</span>
+      <span>Policy Iteration</span>   
+    </div>
+  </div>
+  <div class="tab-content">
+    <h3>Feed Forward Deblurring in 3DGS</h3>
+    <p>
+      <em>May 2025 – Present | <a href="https://cds.iisc.ac.in/faculty/venky/" rel="external nofollow noopener" target="_blank">Prof. Venkatesh Babu</a></em>
+    </p>
+    <p> This project proposes a generalizable, scene-agnostic deblurring framework for 3D Gaussian Splatting (3DGS) pipelines, addressing a key limitation in current 3DGS-based rendering systems. While 3DGS has emerged as a powerful representation for real-time, photorealistic 3D scene rendering, its visual fidelity degrades significantly when input images are blurry. Existing deblurring techniques for 3DGS are predominantly scene-specific, requiring per-scene optimization or fine-tuning, which severely limits scalability and generalization.
+    <br><br>
+To overcome this, we aim to develop a lightweight feed-forward deblurring module that can be plugged directly into foundation 3DGS models such as NoPoSplat and Dust3R, without any scene-specific retraining or per-scene supervision. The goal is to enable fast and scalable deblurring of point cloud representations generated from blurry image sets, without sacrificing real-time performance or rendering quality.</p>
+    <div class="tags">
+      <span>3D Gaussian Splatting</span>
+      <span>Novel View Synthesis</span>
+      <span>Scene Reconstruction</span>      
+      <span>Scene Deblurring</span>
+    </div>
+  </div>
+  <div class="tab-content">
+    <h3>Towards Uncertainty-aware Alignment</h3>
+    <p>
+      <em>Jan 2025 – April 2025 | Advisor: <a href="https://ece.iisc.ac.in/~aditya/" rel="external nofollow noopener" target="_blank"> Prof. Aditya Gopalan</a></em>
+    </p>
+    <p> This project investigates and addresses a key limitation in preference-based alignment of LLMs: the instability of reward models trained on human feedback. In standard RLHF pipelines, a policy is optimized against a reward model trained on preference data. However, we empirically show that reward models trained on the same dataset can produce inconsistent outputs, leading to overfitting and degraded policy performance.
+    <br><br>
+To understand this phenomenon, we develop a theoretical model showing that variance in reward model estimates can lead to unsafe policy updates, increasing the likelihood of performance regressions. In response, we propose a variance-aware policy optimization framework, which incorporates uncertainty estimates from the reward model into the policy training objective. The framework introduces a regularization term that penalizes updates in regions of high reward variance, making the policy learning process more robust.
+    <br><br>
+We provide theoretical guarantees showing that this approach reduces the risk of producing worse policies than the baseline. Experiments across various LLMs and reward model setups confirm that our method significantly improves alignment stability and generalization compared to standard variance-unaware pipelines. This work is currently under review at NeurIPS 2025. </p>
+
+The paper can be found <a href="https://arxiv.org/abs/2507.15906" rel="external nofollow noopener" target="_blank">here</a>.
+<br>
+    <br>
+    <div class="tags">
+      <span>Reinforcement Learning through Human Feedback(RLHF)</span>
+      <span>LLM Alignment</span>
+      <span>Reinforcement Learning</span>
+      <span>LLMs</span>
+      <span>Preference-based Reinforcement Learning</span>
+    </div>
+  </div>
+  <div class="tab-content">
+    <h3>HinglishEval: Evaluating the Effectiveness of Code-generation Models on Hinglish Prompts</h3>
+    <p>
+      <em>Jan 2024 – June 2024 | Advisor: <a href="https://eecs.iisc.ac.in/people/prof-viraj-kumar/" rel="external nofollow noopener" target="_blank">Prof Viraj Kumar</a>
+      </em>
+    </p>
+    <p> Code-generation Models are Large Language Models (LLMs) that are fine-tuned to generate code from natural-language prompts. Prior work shows that such models can democratize programming by allowing novice programmers to generate accurate code for simple coding tasks by providing clear English-language prompts. In this project, we explored whether this democratization can extend to novice programmers who lack proficiency in English but are able to craft clear prompts in another language. Specifically, we considered prompts in Hinglish, a mixture of Hindi and English that many students in India are comfortable with. We made two contributions. First, we proposed a semi-automated technique to translate English prompts into Hinglish, and we used this technique to create HinglishEval: a Hinglish translation of the widely used code-generation benchmark HumanEval. Second, we compared the performance of several popular open- and closed-source code-generation models on Hinglish and English prompts. Our findings suggest that although code-generation models are generally more effective at generating accurate code for English prompts, their efficacy with Hinglish prompts is also promising. </p> <br> This work resulted in publication of the paper - <a href="https://link.springer.com/chapter/10.1007/978-3-031-84391-4_2" rel="external nofollow noopener" target="_blank"> Evaluating the Effectiveness of Code-Generation Models on Hinglish Prompts </a> <br> <br>
+    <div class="tags">
+      <span>Code Generation LLM</span>
+      <span>Multilingual LLM</span>
+      <span>Evaluation Metrics</span>
+      <span>Computer Science Education</span>
+    </div>
+  </div>
+  <br>
+  <div class="tabs">
+    <button class="tab-button active" data-tab="0">1</button>
+    <button class="tab-button" data-tab="1">2</button>
+    <button class="tab-button" data-tab="2">3</button>
+    <button class="tab-button" data-tab="1">4</button>
+  </div>
+</div>
+<script>
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
+  tabButtons.forEach((btn, idx) => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach(b => b.classList.remove("active"));
+      tabContents.forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      tabContents[idx].classList.add("active");
+    });
+  });
+</script>
+
 
   </article>
 

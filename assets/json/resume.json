@@ -99,13 +99,13 @@
   ],
   "languages": [
     {
-      "language": "Bengali",
-      "fluency": "Native speaker",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Bengali",
+      "fluency": "Native speaker",
       "icon": ""
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "language": "German",
-      "fluency": "Intermediate",
+      "fluency": "Beginner",
       "icon": ""
     }    
   ]

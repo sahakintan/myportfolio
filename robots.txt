@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sahakintan.github.io/myportfolio/sitemap.xml
